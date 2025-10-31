@@ -32,12 +32,17 @@
 
 
 
+
+
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { increment,decrement,reset } from "./Createslice";
+import { increment, decrement, reset } from "./Createslice";
 
 function App() {
+  // Access the store state
   const value = useSelector((state) => state.counter.value);
+
+  // Create a dispatch function
   const dispatch = useDispatch();
 
   return (
